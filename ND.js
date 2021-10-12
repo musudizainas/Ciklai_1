@@ -51,15 +51,24 @@ console.log( Math.floor(Math.random() * 10));
 atsitiktinius skaičius nuo 0 iki 10 (vienas skaičius vienoje eilutėje).
 Paskutinis atspausdintas skaičius turi būti 5
 /*
-for (let i = 0; i < 5; i+=1) {
-if (i < 4) {
+for (let i = 0; i <= 10; i+=1) {
+if (i != 5) {
 console.log( Math.floor(Math.random() * 10));
 }
 else {
-console.log(5) ;
+console.log(i) ;
 }
 }
-*/
+//teisingas
+/* 
+let i = 0; 
+    while (i != 5) {
+    i = ( Math.floor(Math.random() * 10));
+    
+    console.log(i) ;
+    }
+    */
+
 
 /*9. console.log’e, naudojant ciklą atspausdinti
  atsitiktinius skirtingus skaičius nuo 0 iki 10 (vienas skaičius vienoje eilutėje).
@@ -137,14 +146,62 @@ console.log("nelyginiukiekis", oddNumberCount);
  atsitiktinių skaičių nuo 0 iki 10 (abu skaičiai vienoje eilutėje).
   Ciklą kartoti tol, kol neiškris abu vienodi skaičiai;
 */
+/*
+let skaicius1 = 0;
+let skaicius2 = 10;
+while (skaicius1 != skaicius2) {
+    skaicius1 = Math.floor(Math.random()* 10);
+    skaicius2 = Math.floor(Math.random()* 10);
+    console.log(skaicius1, skaicius2);
+
+}
+*/
 
 /* 14. console.log’e, naudojant ciklą atspausdinti po porą skirtingų
  atsitiktinių skaičių nuo 0 iki 10 (abu skaičiai vienoje eilutėje).
   Skaičiuoti abiejų skaičių sumas skirtinguose kintamuosiuose. 
   Ciklą kartoti tol, kol kiekviena iš sumų bus daugiau nei 100;
 */
+/*
+let skaicius1 = 0;
+let skaicius2 = 10;
+let suma1 = 0;
+let suma2 = 0;
+while ((suma1 <= 100) || (suma2 <= 100)) {
+    skaicius1 = Math.floor(Math.random()* 10);
+    skaicius2 = Math.floor(Math.random()* 10);
+    suma1 = suma1 + skaicius1;
+    suma2 = suma2 + skaicius2;
+    console.log(skaicius1, skaicius2);
+}
+console.log(suma1, suma2 );
+*/
 
 /* 15. console.log’e, naudojant ciklą atspausdinti po porą 
 skirtingų atsitiktinių skaičių nuo 0 iki 10 (abu skaičiai vienoje eilutėje).
  Ciklą kartoti kol bus sugeneruota po tris arba daugiau nelyginių skaičių.
 */
+/*
+let skaicius1, skaicius2;
+let oddNumberCount1 = 0; 
+let oddNumberCount2 = 0;   
+while ((oddNumberCount1 < 3) || (oddNumberCount2 < 3)){
+    
+    skaicius1 = Math.floor(Math.random() * 10);
+    skaicius2 = Math.floor(Math.random() * 10);
+    console.log(skaicius1, skaicius2);
+    if (skaicius1 % 2 != 0) {
+        console.log("Nelyginis skaicius1"); 
+        oddNumberCount1 = oddNumberCount1 + 1;
+
+    }
+    if (skaicius2 % 2 != 0) {
+            console.log("Nelyginis skaicius2"); 
+            oddNumberCount2 = oddNumberCount2 + 1;
+    
+        }
+    console.log("oddNumberCount1", oddNumberCount1);  
+    console.log("oddNumberCount2", oddNumberCount2);   
+//console.log("nelyginiukiekis", oddNumberCount);
+}
+*/    
